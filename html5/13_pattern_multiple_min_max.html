@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML 5 attributes</h1>
+    <hr/>
+    <form method="post" action="student.html">
+        <table border="2" align="center">
+            <tr>
+                <td>aadhar card number</td>
+                <td>
+                    <input type="text" name="aadharcard" pattern="^[0-9]{12}$" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Select 3 images
+                </td>
+                <td>
+                    <input type="file" name="photo" id="photo" required accept="image/*" multiple />
+                </td>
+            </tr>
+            <tr>
+                <td>Pan card no</td>
+                <td><input type="text" name="pancard" 
+                    pattern="^[A-Z]{5}[0-9]{4}[A-Z]$" required /></td>
+            </tr>
+            <tr>
+                <td>Select birth date</td>
+                <td>
+                    <input type="date" name="dob" min="1923-03-25" max="2023-12-25" required />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="submit" value="submit" />
+                </td>
+            </tr>
+           
+        </table>
+    </form>
+</body>
+</html>
