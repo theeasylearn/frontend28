@@ -1,0 +1,2 @@
+create a webpage which has 5 stories. each story has heading and content. display each and every strong in attrictive format using css. use only universal and type selector. 
+
