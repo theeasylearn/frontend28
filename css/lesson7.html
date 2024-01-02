@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@800&display=swap');
+
+        h1, h2, h3, h4, h5, h6 
+        {
+            font-family: 'Roboto Slab', serif;
+        }
+        /* this is style applies only to h1 which has class heading */
+        h1.heading
+        {
+            background-color: aliceblue;
+            color:blue;
+            text-decoration: underline;
+        }
+        /* this is style applies only to table which has id student */
+        table#student
+        {
+            background-color: beige;
+            width:100%;
+            border: 1px solid brown;
+            border-collapse: collapse;
+        }
+
+        table#student * 
+        {
+            font-size: 20px;    
+            font-family: 'Open Sans', sans-serif;
+        }
+        tbody>tr>td
+        {
+            text-align: center;
+            border: 2px solid green;
+        }
+        thead th 
+        {
+            font-style: italic;
+        }
+        .mylist 
+        {
+            border:1px solid black;
+            margin: 0px;
+            padding:0px;
+            list-style-position: inside;
+            list-style-type: square;
+            /* list-style-type: none; remove bullets */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">heading example</h1>
+    <div class="heading">this is div example</div>
+    <table id="student">
+        <thead>
+            <tr>
+                <th>sr no</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td style="vertical-align: text-top;">yuvraj</td>
+                <td>yuvraj@maharaj.com <br/>
+                    yuvraj@gmail.com
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>deversh</td>
+                <td>deversh@swarag.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>bansi</td>
+                <td>bansi@gmail.com.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <ul class="mylist">
+        <li>One</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+</body>
+</html>
