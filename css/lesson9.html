@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #marksheet
+        {
+            background-color: aliceblue;
+            width:70%;
+            margin:auto; /* display div tag in center in context of it's parent */
+            display: grid;
+            grid-template-columns: 10% 18% 18% 18% 18% 18%;
+            grid-template-rows: 50px 50px 50px;
+        }
+        #marksheet>span 
+        {
+            border:1px solid blue;
+            font-size: 20px;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid example</h1>
+    <div id="marksheet">
+        <span>sr</span>
+        <span>Name</span>
+        <span>Hindi</span>
+        <span>English</span>
+        <span>Maths</span>
+        <span>Total</span>
+
+        <span>1</span>
+        <span>Deversh Patel</span>
+        <span>60</span>
+        <span>70</span>
+        <span>80</span>
+        <span>210</span>
+
+        <span>2</span>
+        <span>Yuvraj parmar</span>
+        <span>60</span>
+        <span>70</span>
+        <span>80</span>
+        <span>210</span>
+    </span>
+</body>
+</html>

@@ -1,0 +1,26 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 1px;
+}
+html 
+{
+    height: 100vh;
+}
+body 
+{
+    height: 100%;
+}
+#site 
+{
+    height: 100%;
+    border:1px solid blue;
+    display: grid;
+    
+}
+#site>div 
+{
+    border: 1px solid black;
+    height:100px;
+}
