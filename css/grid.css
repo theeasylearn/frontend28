@@ -17,10 +17,80 @@ body
     height: 100%;
     border:1px solid blue;
     display: grid;
-    
+    grid-template-rows: 1.5fr 7fr 1.5fr;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: 
+        "logo links links"
+        "menu content sidebar"
+        "footer footer footer";
 }
 #site>div 
 {
     border: 1px solid black;
-    height:100px;
+}
+#logo 
+{
+    grid-area: logo;
+}
+
+#links
+{
+    grid-area: links;
+}
+#links>nav
+{
+    height: 100%;
+}
+#links>nav>ul
+{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around; /* horizontal alignment */
+    align-items: center;/* vertical alignment */
+    height: 100%;
+}
+#links>nav>ul>li>a:link, #menu>nav>ul>li>a:link
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#menu
+{
+    grid-area: menu;
+}
+#menu>nav 
+{
+    height: 100%;
+}
+#menu>nav>ul 
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    list-style-type: none;
+    list-style-position: inside;
+}
+#content 
+{
+    grid-area: content;
+}
+
+#sidebar
+{
+    grid-area: sidebar;
+}
+
+#footer 
+{
+    grid-area: footer;
+}
+#footer>ul
+{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    height: 100%;
 }
